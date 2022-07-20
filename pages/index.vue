@@ -1,22 +1,15 @@
 <template>
   <div class="">
-    <div class="bg-[#d1cfd0] h-auto px-24">
-      <nav-bar class="py-8" />
-      <div class="flex items-end justify-between">
-        <div class="pb-80">
-          <h1 class="page-title text-[#b10234]">About</h1>
-          <p class="page-intro">A bit about myself ...</p>
-        </div>
-        <div>
-          <img class="h-[700px]" src="~~/assets/images/me-avatar.png" alt="" />
-        </div>
-      </div>
+    <div class="bg-[#3d76fb26] h-[100vh] px-24">
+      <!-- <nav-bar class="py-8" /> -->
+      <intro class="mx-auto w-[20%] c-centered" />
     </div>
   </div>
 </template>
 
 <script setup>
 import NavBar from "@/components/nav";
+import Intro from "@/components/Intro.vue"
 </script>
 
 <style scoped>
@@ -35,4 +28,12 @@ import NavBar from "@/components/nav";
   font-family: cheltanham;
   font-size: 48px;
 }
+
+.c-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
 </style>
